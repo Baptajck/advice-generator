@@ -1,0 +1,119 @@
+:root {
+  --light_cyan: #d0e2ec;
+  --neon_grayish: #53feaa;
+  --grayish_blue: #313a49;
+  --dark_grayish_blue: #202632;
+}
+
+body {
+  font-size: 28px;
+  font-family: "Manrope", sans-serif;
+  font-weight: 800;
+  background-color: var(--dark_grayish_blue);
+  color: var(--light_cyan);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
+  margin: 0;
+}
+
+/* FRONTEND MENTOR */
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  margin-bottom: 1em;
+}
+.attribution a {
+  all: unset;
+  color: hsl(228, 45%, 44%);
+}
+
+.attribution a:hover {
+  cursor: pointer;
+  color: hsl(228, 45%, 55%);
+}
+
+.divider_desktop {
+  display: none;
+}
+/* ----------------- */
+
+/* CSS */
+.card {
+  margin: 0 0.8em;
+  background-color: var(--grayish_blue);
+  padding: 0.6em;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+.title {
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  margin-top: 2em;
+  color: var(--neon_grayish);
+}
+
+.advice {
+  text-align: center;
+  font-size: 1.7rem;
+}
+
+.advice::before {
+  content: "\201C";
+}
+
+.advice::after {
+  content: "\201D";
+}
+
+.divider {
+  margin-bottom: 1.5em;
+}
+
+.dice {
+  all: unset;
+  background-color: var(--neon_grayish);
+  padding: 0.6em;
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+  display: flex;
+  position: absolute;
+  bottom: -1em;
+}
+
+.dice:hover {
+  cursor: pointer;
+  box-shadow: 0px 0px 25px 0px rgba(83, 254, 170, 0.8);
+}
+
+.dice_img {
+  width: 100%;
+  height: 100%;
+}
+
+@media screen and (min-width: 1000px) {
+  .card {
+    max-width: 475px;
+    margin: 0 auto;
+    padding: 1em 2em;
+  }
+
+  .advice {
+    font-size: 1.5rem;
+  }
+
+  .divider_mobile {
+    display: none;
+  }
+  .divider_desktop {
+    display: block;
+  }
+}
