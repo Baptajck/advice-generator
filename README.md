@@ -52,7 +52,3 @@ Mobile screenshot
 
 - Website - [Baptjack](https://baptjack.fr)
 - Frontend Mentor - [@baptajck](https://www.frontendmentor.io/profile/Baptajck)
-
-## Acknowledgments
-
-Special thanks to [Baptjack](https://baptjack.fr) who help me completed this challenge.
